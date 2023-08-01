@@ -1,0 +1,60 @@
+  0%|          | 0/20 [00:00<?, ?it/s]
+ Model: lenet_mnist | Epoch: 0| Train loss:  1.71483| Train acc:  0.77113| Val loss:  1.53590| Val acc:  0.93656
+ Model: lenet_mnist | Epoch: 1| Train loss:  1.51809| Train acc:  0.94956| Val loss:  1.50751| Val acc:  0.95889
+ Model: lenet_mnist | Epoch: 2| Train loss:  1.49868| Train acc:  0.96711| Val loss:  1.49831| Val acc:  0.96642
+ Model: lenet_mnist | Epoch: 3| Train loss:  1.48958| Train acc:  0.97508| Val loss:  1.48837| Val acc:  0.97473
+ Model: lenet_mnist | Epoch: 4| Train loss:  1.48454| Train acc:  0.97922| Val loss:  1.48676| Val acc:  0.97540
+ Model: lenet_mnist | Epoch: 5| Train loss:  1.48099| Train acc:  0.98271| Val loss:  1.48326| Val acc:  0.98016
+ Model: lenet_mnist | Epoch: 6| Train loss:  1.47831| Train acc:  0.98522| Val loss:  1.48079| Val acc:  0.98105
+ Model: lenet_mnist | Epoch: 7| Train loss:  1.47637| Train acc:  0.98641| Val loss:  1.48050| Val acc:  0.98255
+ Model: lenet_mnist | Epoch: 8| Train loss:  1.47539| Train acc:  0.98761| Val loss:  1.47863| Val acc:  0.98299
+ Model: lenet_mnist | Epoch: 9| Train loss:  1.47369| Train acc:  0.98926| Val loss:  1.47827| Val acc:  0.98382
+ Model: lenet_mnist | Epoch: 10| Train loss:  1.47268| Train acc:  0.99013| Val loss:  1.48105| Val acc:  0.98172
+Traceback (most recent call last):
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\homework_1\train.py", line 170, in <module>
+    train_llt, val_llt, train_acl, val_acl = train_and_validate(model_lenet5v1, args.model, train_dataloader, 
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\homework_1\train.py", line 65, in train_and_validate
+    acc = accuracy(y_pred, y)
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\codes\lib\site-packages\torch\nn\modules\module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\codes\lib\site-packages\torchmetrics\metric.py", line 236, in forward
+    self._forward_cache = self._forward_reduce_state_update(*args, **kwargs)
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\codes\lib\site-packages\torchmetrics\metric.py", line 302, in _forward_reduce_state_update
+    self.update(*args, **kwargs)
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\codes\lib\site-packages\torchmetrics\metric.py", line 390, in wrapped_func
+    update(*args, **kwargs)
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\codes\lib\site-packages\torchmetrics\classification\stat_scores.py", line 319, in update
+    tp, fp, tn, fn = _multiclass_stat_scores_update(
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\codes\lib\site-packages\torchmetrics\functional\classification\stat_scores.py", line 402, in _multiclass_stat_scores_update
+    fp = (preds != target).sum()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\homework_1\train.py", line 4, in <module>
+    from models import lenet_mnist, lenet_cifar10, resnet_cifar10, resnet_mnist, vgg_cifar10, vgg_mnist
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\homework_1\models\lenet_mnist.py", line 5, in <module>
+    from torchmetrics import Accuracy
+ModuleNotFoundError: No module named 'torchmetrics'
+Traceback (most recent call last):
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\homework_1\train.py", line 4, in <module>
+    from models import lenet_mnist, lenet_cifar10, resnet_cifar10, resnet_mnist, vgg_cifar10, vgg_mnist
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\homework_1\models\lenet_mnist.py", line 5, in <module>
+    from torchmetrics import Accuracy
+ModuleNotFoundError: No module named 'torchmetrics'
+Traceback (most recent call last):
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\homework_1\train.py", line 4, in <module>
+    from models import lenet_mnist, lenet_cifar10, resnet_cifar10, resnet_mnist, vgg_cifar10, vgg_mnist
+  File "C:\Users\Opeyemi\Desktop\deep_learning\codes\homework_1\models\lenet_mnist.py", line 5, in <module>
+    from torchmetrics import Accuracy
+ModuleNotFoundError: No module named 'torchmetrics'
+Traceback (most recent call last):
+  File "C:\Users\Opeyemi\Desktop\OSU_Archive_Classes\deep_learning\codes\homework_1\train.py", line 4, in <module>
+    from models import lenet_mnist, lenet_cifar10, resnet_cifar10, resnet_mnist, vgg_cifar10, vgg_mnist, resnet_dropout
+  File "C:\Users\Opeyemi\Desktop\OSU_Archive_Classes\deep_learning\codes\homework_1\models\lenet_mnist.py", line 5, in <module>
+    from torchmetrics import Accuracy
+ModuleNotFoundError: No module named 'torchmetrics'
+Traceback (most recent call last):
+  File "C:\Users\Opeyemi\Desktop\OSU_Archive_Classes\deep_learning\codes\homework_1\train.py", line 4, in <module>
+    from models import lenet_mnist, lenet_cifar10, resnet_cifar10, resnet_mnist, vgg_cifar10, vgg_mnist, resnet_dropout
+  File "C:\Users\Opeyemi\Desktop\OSU_Archive_Classes\deep_learning\codes\homework_1\models\lenet_mnist.py", line 5, in <module>
+    from torchmetrics import Accuracy
+ModuleNotFoundError: No module named 'torchmetrics'
